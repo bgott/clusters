@@ -6,3 +6,14 @@ body { height: 100%; margin: 0px; padding: 0px }
 .banner-header {
     font-weight: lighter;
 }
+
+/*======= Map Styling ============*/
+.gmnoprint a, .gmnoprint span {
+    display:none;
+}
+.gmnoprint div {
+    background:none !important;
+}
+#GMapsID div div a div img{
+    display:none;
+}
