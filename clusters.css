@@ -3,8 +3,50 @@ body { height: 100%; margin: 0px; padding: 0px }
 #map { height: 85%; width:100%; }
 .page-container { height: 100%; width:100%; }
 
+.banner {
+    background-color: #555; /* Dark-grey background */
+    height: 5em;
+}
+
 .banner-header {
     font-weight: lighter;
+    margin-left: 5%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.banner-header a {
+    color: white;
+}
+
+.icon-bar {
+    margin-top:15px;
+    margin-bottom:15px;
+}
+
+.icon-bar .material-icons {
+    font-size: 32px;
+}
+
+.icon-bar {
+    //width: 50%; /* Full-width */
+}
+
+.icon-bar a {
+    float: left; /* Float links side by side */
+    text-align: center; /* Center-align text */
+    width: 33%; /* Equal width (5 icons with 20% width each = 100%) */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: white; /* White text color */
+    font-size: 36px; /* Increased font size */
+}
+
+.icon-bar a:hover {
+    background-color: #000; /* Add a hover color */
+}
+
+.active {
+    background-color: #4CAF50; /* Add an active/current color */
 }
 
 /*======= Map Styling ============*/

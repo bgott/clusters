@@ -6,3 +6,4 @@ with open('./cities', 'r') as infile, open('./latlongs', 'a') as outfile:
         latlong = "{" + latlong + "}, \n"
         outfile.write(latlong)
 infile.close()
+outfile.close()

@@ -5,14 +5,26 @@
         <meta name='viewport' content='initial-scale=1.0, user-scalable=no'>
         <meta charset='utf-8'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
         <link type="text/css" href='clusters.css' rel='stylesheet'>
     </head>
 
     <body>
 
         <div class='page-container'>
-            <div class='banner'>
-                <h1 class='banner-header text-center' id='title'>Clusters</h1>
+            <div class='row banner'>
+                <div class='col-lg-8'>
+                    <h1 class='banner-header' id='title'><a href="clusters.js:resetMap();">Clusters</a></h1>
+                </div>
+                <div class='col-lg-3'>
+                    <div class="icon-bar">
+                        <a href="#"><i class="material-icons">refresh</i></i></a>
+                        <a href="#"><i class="material-icons">photo_size_select_actual</i></a>
+                        <a href="#"><i class="material-icons">refresh</i></a>
+                    </div>
+                </div>
+                <div class='col-lg-3'></div>
             </div>
 
             <div id="map"></div>
