@@ -9,7 +9,8 @@ body { height: 100%; margin: 0px; padding: 0px }
 }
 
 .banner-header {
-    font-weight: lighter;
+    font-family: 'Muli', sans-serif;
+    font-weight:200;
     margin-left: 5%;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -18,10 +19,12 @@ body { height: 100%; margin: 0px; padding: 0px }
 .banner-header a {
     color: white;
 }
+.banner-header a, u {
+    text-decoration: none;
+}
 
 .icon-bar {
     margin-top:15px;
-    margin-bottom:15px;
 }
 
 .icon-bar .material-icons {
@@ -42,7 +45,7 @@ body { height: 100%; margin: 0px; padding: 0px }
 }
 
 .icon-bar a:hover {
-    background-color: #000; /* Add a hover color */
+    /*background-color: #000; /* Add a hover color */
 }
 
 .active {
