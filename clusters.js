@@ -263,10 +263,12 @@ function initMap() {
 }
 
 function resetMap(){
-    initMap();
-}
-
-document.getElementById('title').onclick = function() {
     map.setCenter({lat: 38.5902, lng: -95.7129});
     map.setZoom(5);
-};
+    console.log("map reset");
+}
+
+// document.getElementById('title').onclick = function() {
+//     map.setCenter({lat: 38.5902, lng: -95.7129});
+//     map.setZoom(5);
+// };
