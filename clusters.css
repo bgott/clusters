@@ -32,7 +32,7 @@ body { height: 100%; margin: 0px; padding: 0px }
 }
 
 .icon-bar {
-    //width: 50%; /* Full-width */
+    float:right;
 }
 
 .icon-bar a {
@@ -50,6 +50,16 @@ body { height: 100%; margin: 0px; padding: 0px }
 
 .active {
     background-color: #4CAF50; /* Add an active/current color */
+}
+
+.modal-title {
+    font-family: 'Muli', sans-serif;
+    font-weight:400;
+}
+
+.modal-body {
+    font-family: 'Muli', sans-serif;
+    font-weight:500;
 }
 
 /*======= Map Styling ============*/

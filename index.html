@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Muli:200" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Muli:200,400,500" rel="stylesheet">
         <link type="text/css" href='clusters.css' rel='stylesheet'>
     </head>
 
@@ -15,15 +15,35 @@
 
         <div class='page-container'>
             <div class='row banner'>
-                <div class='col-lg-8'>
+                <div class='col-sm-3'>
                     <h1 class='banner-header' id='title'><a href="#" onclick="resetMap()">Clusters</a></h1>
                 </div>
-                <div class='col-lg-3 icon-bar'>
+                <div class='col-sm-3 icon-bar'>
                     <a href="#" onclick="resetMap()"><i class="material-icons">refresh</i></a>
                     <a href="#"><i class="material-icons">photo_size_select_actual</i></a>
-                    <a href="#"><i class="material-icons">refresh</i></a>
+                    <a href="#" data-toggle="modal" data-target="#modalLoginForm"><i class="material-icons">refresh</i></a>
                 </div>
-                <div class='col-lg-3'></div>
+            </div>
+
+            <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-center">
+                            <h4 class="modal-title w-100">Location Input</h4>
+                        </div>
+                        <div class="modal-body mx-3">
+                            <div class="md-form mb-5">
+                                <label for="exampleFormControlTextarea1">Latitude : Longitude</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                            <button class="btn btn-default" data-toggle="modal" data-target="#modalLoginForm">Cancel</button>
+                            <button class="btn btn-default">Enter</button>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div id="map"></div>
@@ -34,6 +54,7 @@
         </script>
         <script type="text/javascript" src="clusters.js"></script>
         <script type="text/javascript"  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgjFc31BfOTwc_WDeEmF5utt613D2lkHM&callback=initMap" async defer></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     </body>
 
 </html>
