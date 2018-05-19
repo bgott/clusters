@@ -20,8 +20,8 @@
                 </div>
                 <div class='col-sm-3 icon-bar'>
                     <a href="#" onclick="resetMap()"><i class="material-icons">refresh</i></a>
+                    <a href="#" data-toggle="modal" data-target="#modalLoginForm"><i class="material-icons">add_location</i></a>
                     <a href="#"><i class="material-icons">photo_size_select_actual</i></a>
-                    <a href="#" data-toggle="modal" data-target="#modalLoginForm"><i class="material-icons">refresh</i></a>
                 </div>
             </div>
 
@@ -40,7 +40,7 @@
                         </div>
                         <div class="modal-footer d-flex justify-content-center">
                             <button class="btn btn-default" data-toggle="modal" data-target="#modalLoginForm">Cancel</button>
-                            <button class="btn btn-default">Enter</button>
+                            <button class="btn btn-default" id="locationSubmitButton" data-toggle="modal" data-target="#modalLoginForm">Enter</button>
                         </div>
                     </div>
                 </div>
