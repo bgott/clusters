@@ -19,8 +19,20 @@ function initMap() {
             });
         });
 
+        var mcOptions = {
+          styles:[{
+              url: "img/m1.svg",
+                    width: 60,
+                    height: 60,
+                    fontFamily: "Roboto",
+                    textSize: 17,
+                    textColor: "white",
+          }]
+        };
+        var markerCluster = new MarkerClusterer(map, markers, mcOptions);
+
         var markerCluster = new MarkerClusterer(map, markers,
-            {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+            {imagePath: 'img/m'});
     }
 
 }
