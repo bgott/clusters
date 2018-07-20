@@ -15,7 +15,8 @@ function initMap() {
         var markers = locations.map(function(location, i) {
             return new google.maps.Marker({
                 position: location,
-                label: labels[i % labels.length]
+                //label: labels[i % labels.length],
+                icon: 'img/marker.svg'
             });
         });
 
