@@ -25,9 +25,10 @@ function initMap() {
                     width: 60,
                     height: 60,
                     fontFamily: "Roboto",
-                    textSize: 17,
+                    textSize: 18,
                     textColor: "white",
-          }]
+          }],
+          gridSize:36,
         };
         var markerCluster = new MarkerClusterer(map, markers, mcOptions);
 
